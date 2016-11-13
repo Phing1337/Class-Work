@@ -1,0 +1,157 @@
+* {
+    font-family: 'Helvetica', 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+a {
+    color: black;
+}
+
+img {
+    padding: 0px 20px 30px 20px;
+    width: inherit;
+    height: auto;
+}
+
+.button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.button:hover {
+    background-color: darkgreen;
+}
+
+.content {
+    width: 960px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    margin: 30px auto 50px auto;
+    padding-top: 30px;
+}
+
+.block1 {
+    float: left;
+    width: 640px;
+}
+
+.block1 > h2 {
+    text-transform: uppercase;
+}
+
+.block2 {
+    float: right;
+    width: 320px;
+    height: auto;
+}
+
+
+/* .pic {
+    padding: 0px 20px 0px 20px;
+    max-width: 100%;
+    max-height: 150px;
+} */
+
+.textsep {
+    padding-bottom: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+}
+
+.page {
+    border-color: black;
+    border-style: solid;
+    border-width: 10px 0px 0px 0px;
+}
+
+span.clear {
+    clear: left;
+    display: block;
+}
+
+.portpic {
+    width: 320px;
+    height: auto;
+    float: left;
+    clear: left;
+    display: block;
+}
+
+li {
+    list-style-type: circle;
+    padding-bottom: 20px;
+}
+
+.indent {
+    margin-left: 50px;
+}
+
+.display {
+    padding-bottom: 20px;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+ul,
+h4 {
+    clear: left;
+    display: block;
+}
+
+.info {
+    float: right;
+    width: 600px;
+}
+
+.m-scene {
+    /** Basic styles for an animated element */
+    .scene_element {
+        animation-duration: 0.25s;
+        transition-timing-function: ease-in;
+        animation-fill-mode: both;
+    }
+    /** An element that fades in */
+    .scene_element--fadein {
+        animation-name: fadeIn;
+    }
+    /** An element that fades in and slides up */
+    .scene_element--fadeinup {
+        animation-name: fadeInUp;
+    }
+    /** An element that fades in and slides from the right */
+    .scene_element--fadeinright {
+        animation-name: fadeInRight;
+    }
+}
