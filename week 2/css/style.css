@@ -72,9 +72,6 @@ footer {
     margin: auto;
 }
 
-img {
-    padding: 30px;
-}
 
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -84,15 +81,27 @@ h1 {
 }
 
 ul {
+    
     margin: 20px;
 }
 
 li {
+    list-style-type: none;
     font-weight: lighter;
     color: #606161;
     list-style: disc;
     font-size: 24px;
     padding-top: 20px;
+}
+
+h6{
+    font-size: 40px;
+    color: #033048;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0px 0px 20px 0px;
+    line-height: 140%;
 }
 
 p {
@@ -108,12 +117,27 @@ h3 {
     color: #033048;
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
-    text-shadow: 0 1px black;
     margin: 0;
     padding: 0;
 }
 
+footer {
+    clear: both;
+}
 
+h4 {
+    font-size: 20px;
+    color: #033048;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 0px;
+    padding: 0px;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -335,25 +359,38 @@ h3 {
     margin: auto;
 }
 
-.catagories {
-    list-style-type: none;
-    padding: 10px 0px 0px 0px;
-    margin-left: 0;
-    color: #033048;
-}
+
 .side_list {
+    overflow: hidden;
     list-style-type: none;
     padding-left: 0px;
     margin: 20px 0px 0px 0px;
 }
 
-li a:hover {
-    color: white;
+.side_list:hover {
+    list-style-type: none;
+}
+/*
+.catagories {
+    color: #033048;
 }
 
-.catagories:visited {
+.catagories:hover {
+    color: white;
+} */
+
+
+.catagories a{
     list-style-type: none;
-    color: #033048 !important;
+    margin-left: 0;
+    color: #033048;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.catagories a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 .main {
@@ -365,17 +402,18 @@ li a:hover {
 }
 
 .side_p {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 0px 0px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 18px;
+    height: 250px;
+    overflow: hidden;
 }
 
 .side {
-    padding-left: 10px;
-    border: solid 2px black;
+    padding: 10px;
     margin-top: 50px;
-    height: 500px;
+    height: auto;
     float: right;
     width: 25%;
 }
@@ -396,6 +434,10 @@ li a:hover {
     text-decoration: none;
 }
 
-footer {
-    clear: both;
+.options a:hover {
+    color: white;
+}
+.side_h {
+    text-overflow: clip;
+    margin-top: 50px;
 }
