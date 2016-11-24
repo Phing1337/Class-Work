@@ -9,10 +9,10 @@ Developer @GA in NYC
 /******************************************
 /* SETUP
 /*******************************************/
+
+
 /* Box Model Hack */
-a{
-    text-decoration: none;
-}
+
 * {
     -moz-box-sizing: border-box;
     /* Firexfox */
@@ -50,15 +50,68 @@ a{
     /* note the padding around a left floated image */
 }
 
-footer {
-    background-color: #121212;
-    height: 450px;
-    width: 100%;
-    margin: auto;
-}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    height: 100px;
+    background-color: #033048;
+}
+
+footer {
+    background-color: #121212;
+    height: 350px;
+    width: 100%;
+    margin: auto;
+}
+
+img {
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 1px black;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 20px;
+}
+
+li {
+    font-weight: lighter;
+    color: #606161;
+    list-style: disc;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+p {
+    font-weight: lighter;
+    color: #606161;
+    font-size: 24px;
+    padding-top: 40px;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: 30px;
+    color: #033048;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 1px black;
+    margin: 0;
+    padding: 0;
+}
 
 
 /******************************************
@@ -72,7 +125,8 @@ footer {
     width: 100%;
     margin: auto;
 }
-.footlogo{
+
+.footlogo {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     width: 900px;
@@ -83,6 +137,7 @@ footer {
     color: #f9e42e;
     display: block;
 }
+
 #about {
     width: 900px;
     margin: auto;
@@ -99,21 +154,18 @@ footer {
 }
 
 #quote {
-    background: url(../images/testimonial_bg.jpg);
+    background: url(../images/testimonial_bg.jpg) repeat;
+    width: 100%;
     background-size: cover;
     background-attachment: fixed;
     height: 350px;
-    top: 0;
-    background-repeat: no-repeat;
-    background-position: right top;
 }
+
 .soc {
     padding: 20px;
     text-align: center;
 }
-img {
-    padding: 30px;
-}
+
 .testimonial {
     width: 550px;
     margin: auto;
@@ -139,19 +191,10 @@ img {
     display: block;
 }
 
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
 #home {
-    background: url(../images/header_bg.jpg);
+    background: url(../images/header_bg.jpg) repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 1000px;
-    top: 0;
-    background-repeat: no-repeat;
-    background-position: right top;
 }
 
 #container {
@@ -230,13 +273,6 @@ img {
     display: block;
 }
 
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 0 1px black;
-    margin: 0;
-    padding: 0;
-}
-
 .logo {
     font-family: 'Open Sans', sans-serif;
     position: relative;
@@ -259,21 +295,107 @@ h1 {
     display: block;
 }
 
-ul {
-    margin: 20px;
+.thing {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-li {
-    font-weight: lighter;
-    color: #606161;
-    list-style: disc;
-    font-size: 24px;
-    padding-top: 20px;
+
+/******************************************
+/* page 2
+/*******************************************/
+
+.logo_page2 {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    margin: 30px 0px 0px 0px;
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+    display: block;
+    float: left;
+    vertical-align: middle;
 }
 
-p {
-    font-weight: lighter;
-    color: #606161;
-    font-size: 24px;
-    padding-top: 40px;
+.backer {
+    background-color: lightgray;
+    z-index: -99;
+}
+
+.constrain {
+    width: 960px;
+    margin: auto;
+}
+
+.links {
+    float: right;
+    list-style-type: none;
+    margin: auto;
+}
+
+.catagories {
+    list-style-type: none;
+    padding: 10px 0px 0px 0px;
+    margin-left: 0;
+    color: #033048;
+}
+.side_list {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+li a:hover {
+    color: white;
+}
+
+.catagories:visited {
+    list-style-type: none;
+    color: #033048 !important;
+}
+
+.main {
+    margin-top: 50px;
+    border: solid 2px black;
+    height: 500px;
+    float: left;
+    width: 75%;
+}
+
+.side_p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.side {
+    padding-left: 10px;
+    border: solid 2px black;
+    margin-top: 50px;
+    height: 500px;
+    float: right;
+    width: 25%;
+}
+
+.options {
+    font-weight: 500;
+    list-style-type: none;
+    float: left;
+    padding: 40px 5px 0px 5px;
+}
+
+.options a {
+    list-style-type: none;
+    color: #d1be18;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0px 0px 0px;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
 }
