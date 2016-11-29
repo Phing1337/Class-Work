@@ -72,7 +72,6 @@ footer {
     margin: auto;
 }
 
-
 h1 {
     font-family: 'Open Sans', sans-serif;
     text-shadow: 0 1px black;
@@ -80,8 +79,17 @@ h1 {
     padding: 0;
 }
 
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 1px black;
+    margin: 0;
+    padding: 0px 10px 0px 0px;
+    display: inline;
+    font-size: 70px;
+    float: left;
+}
+
 ul {
-    
     margin: 20px;
 }
 
@@ -94,7 +102,7 @@ li {
     padding-top: 20px;
 }
 
-h6{
+h6 {
     font-size: 40px;
     color: #033048;
     font-weight: 600;
@@ -131,13 +139,18 @@ h4 {
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10px 0px 10px 0px;
+    bottom: 10px;
+    display: block;
+    text-align: right;
 }
 
 img {
     margin: 0px;
     padding: 0px;
 }
+
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -344,7 +357,7 @@ img {
 }
 
 .backer {
-    background-color: lightgray;
+    background-color: #eeeeed;
     z-index: -99;
 }
 
@@ -359,7 +372,6 @@ img {
     margin: auto;
 }
 
-
 .side_list {
     overflow: hidden;
     list-style-type: none;
@@ -370,6 +382,8 @@ img {
 .side_list:hover {
     list-style-type: none;
 }
+
+
 /*
 .catagories {
     color: #033048;
@@ -379,8 +393,7 @@ img {
     color: white;
 } */
 
-
-.catagories a{
+.catagories a {
     list-style-type: none;
     margin-left: 0;
     color: #033048;
@@ -394,9 +407,9 @@ img {
 }
 
 .main {
+    padding: 0px 10px 0px 0px;
     margin-top: 50px;
-    border: solid 2px black;
-    height: 500px;
+    height: auto;
     float: left;
     width: 75%;
 }
@@ -437,7 +450,29 @@ img {
 .options a:hover {
     color: white;
 }
+
 .side_h {
     text-overflow: clip;
     margin-top: 50px;
+}
+
+.blog_img {
+    padding: 10px 0px 30px 0px;
+    width: 100%;
+}
+
+.block {
+    display: inline;
+    padding: 0px 0px 20px 0px;
+}
+
+.block:first-child:first-letter {
+    font-size: 70px;
+    display: block;
+}
+
+.sep {
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
 }
