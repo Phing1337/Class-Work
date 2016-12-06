@@ -1,28 +1,21 @@
-$( document ).ready(function() {
+$(document).ready(function () {
+    $(".readmore a").click(expandMore);
 
-	$(".readmore a").click(expandMore);
+    function expandMore(event) {
+        event.preventDefault();
+        $('.readmore a').hide();
+        $('#show-this-on-click').slideDown();
+        $('.readless').show();
+    };
+    $('.readless a').click(showLess);
 
-	function expandMore(event){
-		event.preventDefault();
-        $('.readmore').click( function(){
-            $('.readmore').hide();
-            $('#show-this-on-click').slideToggle();
-            $('.readless').show();
-        });
-        }
-        function showLess(event){
-		event.preventDefault();
-        $('.readless').click( function(){
-            $('.readmore').show();
-            $('#show-this-on-click').slideUp();
-            $('.readless').hide();
-        });
-	
-
+    function showLess(event) {
+        event.preventDefault();
+        $('.readmore a').show();
+        $('#show-this-on-click').slideUp();
+        $('.readless').hide();
+    };
 });
-
-
-
 /*
 1) see small version
     click read more button
