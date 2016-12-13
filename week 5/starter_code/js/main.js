@@ -13,6 +13,7 @@ console.log('youre getting this far');
 
 function changeBackground() {
     event.preventDefault();
+    var cityInput = $('#city-type').val();
     if (cityInput == "NYC" || cityInput == "New York City" || cityInput == "New York") {
         //change background to NYC
         $('body').css("background-image", "url (../images/nyc.jpg)");
@@ -45,5 +46,5 @@ $("#submit-btn").on("click", function (event) {
     changeBackground();
     console.log(cityInput);
 });
-var cityInput = $('#city-type').val();
+
 //$('#submit-btn').click(changeBackground);

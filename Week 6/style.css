@@ -1,0 +1,34 @@
+body{
+    background-color: lightblue;
+}
+
+
+rock paper scissors {
+    
+text-align: center;
+}
+
+button {
+    margin: auto;
+    text-align: center;
+    border: solid 2px black;
+    height: 20px;
+
+    
+    
+}
+
+button: active {
+    border: solid 2px black;
+    height: 20px;
+    display: block;
+    background: green;
+    
+    
+}
+
+.result {
+    
+    text-align: center;
+    font-size: 200px;
+}
