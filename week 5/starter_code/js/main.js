@@ -16,27 +16,27 @@ function changeBackground() {
     var cityInput = $('#city-type').val();
     if (cityInput == "NYC" || cityInput == "New York City" || cityInput == "New York") {
         //change background to NYC
-        $('body').css("background-image", "url (../images/nyc.jpg)");
+        $('body').css('background-image', 'url("../images/nyc.jpg")');
         console.log("changed to NYC");
     }
     else if (cityInput == "San Francisco" || cityInput == "Bay Area" || cityInput == "SF") {
         //change background to SF
-        $('body').css("background-image", "url (../images/sf.jpg) no-repeat center center fixed");
+        $('body').css('background-image', 'url("../images/sf.jpg")');
         console.log("changed to SF");
     }
     else if (cityInput == "LA" || cityInput == "Los Angeles" || cityInput == "LAX") {
         //change background to LA
-        $('body').css("background-image", "url (../images/la.jpg) no-repeat center center fixed");
+        $('body').css('background-image', 'url("../images/la.jpg")');
         console.log("changed to LA");
     }
     else if (cityInput == "Austin" || cityInput == "ATX") {
         //change background to austin
-        $('body').css("background-image", "url (../images/austin.jpg) no-repeat center center fixed");
+        $('body').css('background-image', 'url("../images/austin.jpg")');
         console.log("changed to Austin");
     }
     else if (cityInput == "Sydney" || cityInput == "SYD") {
         //change background to Sydney
-        $('body').css("background-image", "url (../images/sydney.jpg) no-repeat center center fixed");
+        $('body').css('background-image', 'url("../images/citipix_skyline.jpg")');
         console.log("changed to Sydney");
     }
 };
@@ -44,7 +44,6 @@ function changeBackground() {
 $("#submit-btn").on("click", function (event) {
     event.preventDefault();
     changeBackground();
-    console.log(cityInput);
 });
 
 //$('#submit-btn').click(changeBackground);
