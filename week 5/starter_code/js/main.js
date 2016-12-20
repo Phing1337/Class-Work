@@ -41,7 +41,7 @@ function changeBackground() {
     }
 };
 
-$("#submit-btn").on("click", function (event) {
+$("#submit-btn").on("click", function () {
     event.preventDefault();
     changeBackground();
 });
