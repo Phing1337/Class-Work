@@ -1,45 +1,34 @@
 html {
     background-color: black;
-    background-size: cover;
+    
 }
 
+/* the slide container with a fixed size */
 .slides {
-     width:100%;
-    height:100%;
-    position: fixed;
+  box-shadow: 0px 0px 6px black;
+  margin: 0 auto;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* the images are positioned absolutely to stack. opacity transitions are animated. */
+.slides img { 
+  display: block;
+  position: absolute; 
+  transition: opacity 1s;
+  opacity: 0;
+  width: 100%;
 }
-li {
-  position: absolute;
+
+/* the first image is the current slide. it's faded in. */
+.slides img:first-child { 
+  z-index: 2; /* frontmost */
+  opacity: 1;
 }
-img{
-  background-size: cover;
-}
-li:nth-child(4) {
-  animation: xfade 16s 0s infinite;
-}
-li:nth-child(3) {
-  animation: xfade 16s 4s infinite;
-}
-li:nth-child(2) {
-  animation: xfade 16s 8s infinite;
-}
-li:nth-child(1) {
-  animation: xfade 16s 12s infinite;
-}
-@keyframes xfade{
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
+
+/* the last image is the previous slide. it's behind the current slide and it's faded over. */
+.slides img:last-child {
+  z-index: 1; /* behind current slide */
+  opacity: 1;
 }
