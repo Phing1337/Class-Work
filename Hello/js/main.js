@@ -1,12 +1,16 @@
 $(document).ready(function(){
 
-console.log("Hello")
+console.log("Hello");
+  
+   /* addEventListener("click", function() {
+    var el = document.documentElement,
+      rfs = el.requestFullscreen
+        || el.webkitRequestFullScreen
+        || el.mozRequestFullScreen
+        || el.msRequestFullscreen 
+    ;
 
-function nextSlide() {
-    var q = function(sel) { return document.querySelector(sel); }   
-    q(".slides").appendChild(q(".slides img:first-child"));
-}
-setInterval(nextSlide, 6000)
+    rfs.call(el);
+});*/
 
-
-})
+});
