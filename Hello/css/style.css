@@ -14,6 +14,7 @@ body {
 }
 
 .fill {
+    
     position: absolute;
     float: left;
     height: 1920px;
@@ -23,6 +24,24 @@ body {
     left: 0;
     clear: both;
     z-index: 2;
+}
+
+.content {
+
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    z-index: 4;
+}
+.title, .story{
+    font-family:  'open sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: white;
+
+}
+
+.story {
+    font-size: 32px;
+    font-weight: 400;
 }
 /*.info{ 
   float: right; 

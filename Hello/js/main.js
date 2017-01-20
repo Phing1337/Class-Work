@@ -13,4 +13,9 @@ console.log("Hello");
     rfs.call(el);
 });*/
 
+    
+// if i click people then link to people.html
+// then fade in blur and dark background
+// then fade in page info
+    
 });
