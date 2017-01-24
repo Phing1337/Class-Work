@@ -17,6 +17,10 @@ a{
     z-index: 2;
 }
 
+.active {
+    color: orange;
+}
+
 .fill {
     
     position: absolute;
@@ -43,6 +47,10 @@ a{
 
 }
 
+.story{
+    width: 50%;
+}
+
 .title {
     font-size: 36pt;
     font-weight: 300;
@@ -51,6 +59,19 @@ a{
 .story {
     font-size: 18pt;
     font-weight: 400;
+}
+
+.xde:focus:{
+    color: orange;
+}
+.xde:hover:{
+    color: orange;
+}
+.xde:active:{
+    color: orange;
+}
+.xde:after:{
+    color: orange;
 }
 /*.info{ 
   float: right; 
@@ -150,7 +171,7 @@ a{
     position: relative;
     top: 50px;
     float: left;
-    width: 50%;
+    width: 100%;
     
 }
 
@@ -168,8 +189,8 @@ a{
     float: right;    
     width: 35%;
     height: 800px;
+    background-size:contain;
     background-image: url(../img/Layout.png);
-    background-size: contain;
     background-repeat: no-repeat;
 }
 #lighthouse{
@@ -192,4 +213,22 @@ a{
 }
 #service{
     display: none;
+}
+
+#tbm {
+    display: none;
+}
+
+.lighthouse {
+    color: orange;
+}
+
+.bio {
+    
+}
+
+.full {
+   width: 20px;
+    height: 20px;
+    border: 2px solid black;
 }
