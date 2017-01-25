@@ -38,10 +38,10 @@ a{
 
     position: absolute;
     top: 200px;
-    left: 125px;
+    left: 55px;
     z-index: 4;
 }
-.title, .story{
+.title, .story, .leader{
     font-family:  'open sans', Helvetica Neue, Helvetica, Arial, sans-serif;
     color: white;
 
@@ -144,16 +144,11 @@ a{
 }
 
 .nav1 {
-    font-family:  'open sans', Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 40px;
-    color: white;
-    font-weight: 300;
+    
     position: absolute;
     float: left;
-    padding: 20px;
-    width: auto;
     z-index: 99;
-    top: 5%;
+    top: 5.5%;
     left: 350px;
 }
 .logo {
@@ -183,21 +178,81 @@ a{
     float: left;
 }
 
-.fp{
-    margin-top: 100px;
-    margin-right: 120px;
-    float: right;    
+#fp-xde{
+    position: absolute;
+    left: 900px;
+    top: 50px;  
     width: 35%;
     height: 800px;
     background-size:contain;
-    background-image: url(../img/Layout.png);
+    background-image: url(../img/XDE.png);
+    background-repeat: no-repeat;
+}
+#fp-oracle{
+    position: absolute;
+    left: 900px;
+    top: 50px;  
+    width: 35%;
+    height: 800px;
+    background-size:contain;
+    background-image: url(../img/Oracle.png);
+    background-repeat: no-repeat;
+}
+#fp-lighthouse{
+    position: absolute;
+    left: 900px;
+    top: 50px;  
+    width: 35%;
+    height: 800px;
+    background-size:contain;
+    background-image: url(../img/LightHouse.png);
+    background-repeat: no-repeat;
+}
+#fp-service{
+    position: absolute;
+    left: 900px;
+    top: 50px;  
+    width: 35%;
+    height: 800px;
+    background-size:contain;
+    background-image: url(../img/Service.png);
+    background-repeat: no-repeat;
+}
+#fp-tbm{
+    position: absolute;
+    left: 900px;
+    top: 50px;  
+    width: 35%;
+    height: 800px;
+    background-size:contain;
+    background-image: url(../img/TBM.png);
+    background-repeat: no-repeat;
+}
+#fp-workday{
+    position: absolute;
+    left: 900px;
+    top: 50px;  
+    width: 35%;
+    height: 800px;
+    background-size:contain;
+    background-image: url(../img/Workday.png);
+    background-repeat: no-repeat;
+}
+#fp-tax{
+    position: absolute;
+    left: 900px;
+    top: 50px;  
+    width: 35%;
+    height: 800px;
+    background-size:contain;
+    background-image: url(../img/TaxTech.png);
     background-repeat: no-repeat;
 }
 #lighthouse{
-    
+    display: none;
 }
 #xde {
-    display: none;
+    
 }
 #oracle{
     display: none;
@@ -220,7 +275,7 @@ a{
 }
 
 .lighthouse {
-    color: orange;
+    
 }
 
 .bio {
@@ -231,4 +286,32 @@ a{
    width: 20px;
     height: 20px;
     border: 2px solid black;
+}
+
+.xde {
+    color: orange;
+}
+
+.bar {
+    border-bottom: 2px solid orange;
+    padding-top:15px;
+    width: 250px;
+}
+
+.leader {
+    position: absolute;
+    float: left;
+    top: 350px;
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+}
+
+.pic {
+    
+}
+
+.ign {
+    width: 200px;
+    height: auto;
 }
